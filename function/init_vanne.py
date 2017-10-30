@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ï»¿# -*- coding: utf-8 -*-
 
 from PyQt4.QtGui import QLineEdit, QComboBox,QMessageBox
 from qgis.core import QgsFeatureRequest
@@ -13,14 +13,14 @@ def my_form_open(dialog, layer, feature):
     geom = feature.geometry()
     
     if geom is not None and layer.isEditable():
-        if feature[u"closed"] == 't' or feature[u"networkseparation"] == 't':
+        if feature[u"closed"] == 't' and feature[u"fk_function"] not in [6102,6103,6110,6112] or feature[u"networkseparation"] == 't':
             text = ''
             if feature[u"closed"] == 't':
-                text += u"ATTENTION !! La vanne est fermée"
+                text += u"ATTENTION !! La vanne est fermÃ©e"
             if feature[u"closed"] == 't' and feature[u"networkseparation"] == 't':
                 text += u"\n"
             if feature[u"networkseparation"] == 't':
-                text += u"ATTENTION !! Vanne inter-réseau"
+                text += u"ATTENTION !! Vanne inter-rÃ©seau"
             msgBox = QtGui.QMessageBox()
             msgBox.setText(text)
             msgBox.setIcon(2)
@@ -44,7 +44,7 @@ def my_form_open(dialog, layer, feature):
             annee = NULL
             pression = 0
             district = 0
-            # obtenir la légende de la carte et vérifier si la couche est visible / attention ne contrôle pas si l'objet est visible selon le style défini
+            # obtenir la lÃ©gende de la carte et vÃ©rifier si la couche est visible / attention ne contrÃ´le pas si l'objet est visible selon le style dÃ©fini
             legend = iface.legendInterface()
             for lay in QgsMapLayerRegistry.instance().mapLayers().values():
                 uri = QgsDataSourceURI(lay.source())
@@ -52,7 +52,7 @@ def my_form_open(dialog, layer, feature):
                 if name == "qwat_od.pipe" :# and legend.isLayerVisible(lay):
                     for feat in lay.getFeatures(QgsFeatureRequest(geom.boundingBox())):
                         if feat.geometry().intersects(geom.buffer(0.03, 3)):
-                            # mise à jour des attributs de l'objet
+                            # mise Ã  jour des attributs de l'objet
                             if not feature[u"fk_status"] or feature.id() <= 0:
                                 status = feat[u"fk_status"]
                             if not feature[u"year"] or feature.id() <= 0:
@@ -70,9 +70,9 @@ def my_form_open(dialog, layer, feature):
 
             if num_cond == 0:
                 print("pas de conduite ici")
-                # aucune mise à jour du formulaire dépendant de la conduite sauf pour la zone de pression et la commune
-                iface.messageBar().pushMessage("Attention", u"Aucune conduite sous l'objet réseau", level=QgsMessageBar.WARNING, duration=4)
-                # reprise des infos par défaut si définies dans le formulaire QGIS
+                # aucune mise Ã  jour du formulaire dÃ©pendant de la conduite sauf pour la zone de pression et la commune
+                iface.messageBar().pushMessage("Attention", u"Aucune conduite sous l'objet rÃ©seau", level=QgsMessageBar.WARNING, duration=4)
+                # reprise des infos par dÃ©faut si dÃ©finies dans le formulaire QGIS
                 # commune
                 if not feature[u"fk_district"] or feature.id() <= 0:
                     district_v = None            
@@ -91,9 +91,9 @@ def my_form_open(dialog, layer, feature):
                                 line_pression.setCurrentIndex(line_pression.findText(pression_v))
                 
             else:
-                # mise à jour du formulaire à l'ouverture | récupération des données de la conduite
-                iface.messageBar().pushMessage("Infos", u"attributs récupérés de la conduite", level=QgsMessageBar.INFO, duration=4)
-                # année
+                # mise Ã  jour du formulaire Ã  l'ouverture | rÃ©cupÃ©ration des donnÃ©es de la conduite
+                iface.messageBar().pushMessage("Infos", u"attributs rÃ©cupÃ©rÃ©s de la conduite", level=QgsMessageBar.INFO, duration=4)
+                # annÃ©e
                 #print(feature.id())
                 if not feature[u"year"] or feature.id() <= 0:
                     line_annee.setText(str(annee))
@@ -123,7 +123,7 @@ def my_form_open(dialog, layer, feature):
                         line_pression.setCurrentIndex(line_pression.findText(pression_v))
 
                 if num_cond > 1:
-                    iface.messageBar().pushMessage("Attention", u"Plusieurs conduites sous l'objet réseau", level=QgsMessageBar.INFO, duration=4)
+                    iface.messageBar().pushMessage("Attention", u"Plusieurs conduites sous l'objet rÃ©seau", level=QgsMessageBar.INFO, duration=4)
                     #print("plusieurs conduites")
         else:
             pass
