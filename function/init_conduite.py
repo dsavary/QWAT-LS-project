@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 
 from PyQt4.QtGui import QLineEdit, QComboBox, QCheckBox, QMessageBox
@@ -10,12 +10,16 @@ from datetime import datetime
 def my_form_open(dialog, layer, feature):
     
     #attributs de l'objet
-    #print feature.id()
+    fid = feature.id()
     geom = feature.geometry()
+    #print fid
+    #print feature[u"year"]
+    #print feature[u"fk_pressurezone"]
+    #print feature[u"fk_district"]
 
     if geom is not None and layer.isEditable():
         '''
-        # mise � jour des attributs cal� SISOL et pr�cision
+        # mise ? jour des attributs cal? SISOL et pr?cision
         
         line_prec = dialog.findChild(QComboBox, "fk_precision")
         line_cale_sisol = dialog.findChild(QCheckBox, "usr_cale_sisol")
@@ -71,7 +75,7 @@ def my_form_open(dialog, layer, feature):
         layer_c = (l for l in registry.mapLayers().values() if QgsDataSourceURI(l.source()).table() == 'district' and hasattr(l, 'providerType') and l.providerType() == 'postgres').next()
         if feature[u"usr_aec"] == 't':
             msgBox = QtGui.QMessageBox()
-            text = u"L'attribut AEC est renseign� sur cette conduite "
+            text = u"L'attribut AEC est renseigné sur cette conduite "
             msgBox.setText(text)
             msgBox.setIcon(2)
             msgBox.setWindowTitle("Attention !! ")
@@ -80,52 +84,39 @@ def my_form_open(dialog, layer, feature):
         num_zone = 0
         num_com = 0
         zone = ""
+        zone_id = None
         commune = ""
+        commune_id = None
         pipe_snap = None
-        pipe_snap = next((fpipe for fpipe in layer.getFeatures(QgsFeatureRequest(geom.boundingBox())) if fpipe.geometry().intersects(geom.buffer(0.01,3))),None)
-        
-        # mise � jour de l'ann�e
+        pipe_snap = next((fpipe for fpipe in layer.getFeatures(QgsFeatureRequest(geom.boundingBox())) if fpipe.geometry().intersects(geom.buffer(0.01,3)) ),None)
+        if pipe_snap is None:
+            iface.messageBar().pushMessage("Attention", u"la conduite n'est pas connectée à un sommet d'une autre conduite", level=QgsMessageBar.WARNING, duration=5)
+
+
+        # mise ? jour de l'ann?e
         if not feature[u"year"] and feature.id() <= 0: # and feature[u"year"] != 0:
             line_year = dialog.findChild(QLineEdit, "year")
             line_year.setText(str(datetime.now().year))
+            #feature[u"year"] = datetime.now().year
         
         
         #mise de la zone de pression et de la commune
-        if feature.id() <= 0 or not feature[u"fk_district"] or not feature[u"fk_pressurezone"]:
-            if pipe_snap is not None:
-                id_zone = pipe_snap[u"fk_pressurezone"]
-                id_commune = pipe_snap[u"fk_district"]
-                zone = (f for f in layer_p.getFeatures(QgsFeatureRequest(id_zone)) if f[u"usr_active"] == "t").next()[u"name"]
-                commune = (f for f in layer_c.getFeatures(QgsFeatureRequest(id_commune)) if f[u"usr_active"] == "t").next()[u"name"]
+
+        if feature.id() <= 0 and not feature[u"fk_pressurezone"]:
+            # zone de pression
+            if pipe_snap is not None and pipe_snap[u"fk_pressurezone"]:
+                zone = (f for f in layer_p.getFeatures(QgsFeatureRequest(pipe_snap[u"fk_pressurezone"])) if f[u"usr_active"] == "t").next()[u"name"]
+                zone_id = pipe_snap[u"fk_pressurezone"]
                 num_zone = 1 if zone else 0
-                num_com = 1 if commune else 0
-                #print pipe_snap.id()
-                #print "infos ''zone de pression et commune'' issues de la conduite"
-                iface.messageBar().pushMessage("Infos", u"''zone de pression et commune'' issues de la conduite", level=QgsMessageBar.INFO, duration=5)
+                iface.messageBar().pushMessage("Infos", u"''zone de pression'' issues de la conduite", level=QgsMessageBar.INFO, duration=2)
             else:
-                for feat in layer_c.getFeatures(QgsFeatureRequest(geom.boundingBox())):
-                    if feat.geometry().intersects(geom.buffer(0.03, 3)) and feat[u"usr_active"] == "t":
-                        num_com += 1
-                        commune = feat[u"name"]
-                        #print commune
                 for feat in layer_p.getFeatures(QgsFeatureRequest(geom.boundingBox())):
                     if feat.geometry().intersects(geom.buffer(0.03, 3)) and feat[u"usr_active"] == "t":
-                        num_zone += 1
                         zone = feat[u"name"]
-                        #print zone
-                #text = u"Attention : la conduite n'est pas connect�e �  un sommet d'une autre conduite"
-                #msgBox.setText(text)
-                #msgBox.exec_()
-                iface.messageBar().pushMessage("Attention", u"la conduite n'est pas connect�e � un sommet d'une autre conduite", level=QgsMessageBar.WARNING, duration=5)
-            if not feature[u"fk_district"] or feature.id() <= 0:
-                line_com = dialog.findChild(QLineEdit, "fk_district")
-                if line_com is not None:
-                    line_com.setText(commune)
-                else:
-                    combo_com = dialog.findChild(QComboBox, "fk_district")
-                    if combo_com is not None:
-                        combo_com.setCurrentIndex(combo_com.findText(commune))
-            if not feature[u"fk_pressurezone"] or feature.id() <= 0:
+                        zone_id = feat[u"id"]
+                        num_zone += 1
+            if num_zone > 0:
+                #feature[u"fk_pressurezone"] = zone_id
                 line_zone = dialog.findChild(QLineEdit, "fk_pressurezone")
                 if line_zone is not None:
                     line_zone.setText(zone)
@@ -133,6 +124,29 @@ def my_form_open(dialog, layer, feature):
                     combo_zone = dialog.findChild(QComboBox, "fk_pressurezone")
                     if combo_zone is not None:
                         combo_zone.setCurrentIndex(combo_zone.findText(zone))
+        if feature.id() <= 0 and not feature[u"fk_district"]:
+            # commune
+            if pipe_snap is not None and pipe_snap[u"fk_district"]:
+                commune = (f for f in layer_c.getFeatures(QgsFeatureRequest(pipe_snap[u"fk_district"])) if f[u"usr_active"] == "t").next()[u"name"]
+                commune_id = pipe_snap[u"fk_district"]
+                num_com = 1 if commune else 0
+                iface.messageBar().pushMessage("Infos", u"''commune'' issues de la conduite", level=QgsMessageBar.INFO, duration=2)
+            else:
+                for feat in layer_c.getFeatures(QgsFeatureRequest(geom.boundingBox())):
+                    if feat.geometry().intersects(geom.buffer(0.03, 3)) and feat[u"usr_active"] == "t":
+                        commune = feat[u"name"]
+                        commune_id = feat[u"id"]
+                        num_com += 1
+            if num_com > 0:
+                #feature[u"fk_district"] = zone_id
+                line_com = dialog.findChild(QLineEdit, "fk_district")
+                if line_com is not None:
+                    line_com.setText(commune)
+                else:
+                    combo_com = dialog.findChild(QComboBox, "fk_district")
+                    if combo_com is not None:
+                        combo_com.setCurrentIndex(combo_com.findText(commune))
+
             if num_com == 0:
                 print "pas de commune"
             if num_com > 1:
