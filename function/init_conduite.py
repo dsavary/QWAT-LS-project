@@ -7,12 +7,12 @@ from qgis.utils import iface
 from qgis.gui import QgsMessageBar
 from datetime import datetime
 
-def my_form_open(dialog, layer, feature):
+def my_form_open_pipe(dialog, layer, feature):
     
     #attributs de l'objet
     fid = feature.id()
     geom = feature.geometry()
-    #print fid
+    print fid
     #print feature[u"year"]
     #print feature[u"fk_pressurezone"]
     #print feature[u"fk_district"]

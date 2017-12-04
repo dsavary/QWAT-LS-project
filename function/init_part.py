@@ -5,7 +5,7 @@ from qgis.core import QgsFeatureRequest
 from qgis.utils import iface
 
 
-def my_form_open(dialog, layer, feature):
+def my_form_open_part(dialog, layer, feature):
     
     #attributs de l'objet
     print feature.id()
@@ -30,7 +30,7 @@ def my_form_open(dialog, layer, feature):
         annee = NULL
         pression = 0
         district = 0
-        # obtenir la légende de la carte et vérifier si la couche est visible / attention ne contrôle pas si l'objet est visible selon le style défini
+        # obtenir la lï¿½gende de la carte et vï¿½rifier si la couche est visible / attention ne contrï¿½le pas si l'objet est visible selon le style dï¿½fini
         legend = iface.legendInterface()
         for lay in QgsMapLayerRegistry.instance().mapLayers().values():
             uri = QgsDataSourceURI(lay.source())
@@ -38,7 +38,7 @@ def my_form_open(dialog, layer, feature):
             if name == "qwat_od.pipe" :# and legend.isLayerVisible(lay):
                 for feat in lay.getFeatures(QgsFeatureRequest(geom.boundingBox())):
                     if feat.geometry().intersects(geom.buffer(0.03, 3)):
-                        # mise à jour des attributs de l'objet
+                        # mise ï¿½ jour des attributs de l'objet
                         if not feature[u"fk_status"] or feature.id() <= 0:
                             status = feat[u"fk_status"]
                         if not feature[u"year"] or feature.id() <= 0:
@@ -56,11 +56,11 @@ def my_form_open(dialog, layer, feature):
 
         if num_cond == 0:
             print("pas de conduite ici")
-            # aucune mise à jour du formulaire
-            # reprise des infos par défaut si définies dans le formulaire QGIS
+            # aucune mise ï¿½ jour du formulaire
+            # reprise des infos par dï¿½faut si dï¿½finies dans le formulaire QGIS
         else:
-            # mise à jour du formulaire à l'ouverture 
-            # année
+            # mise ï¿½ jour du formulaire ï¿½ l'ouverture 
+            # annï¿½e
             #print(feature.id())
             if not feature[u"year"] or feature.id() <= 0:
                 line_annee.setText(str(annee))

@@ -6,7 +6,7 @@ from qgis.utils import iface
 from qgis.gui import QgsMessageBar
 
 
-def my_form_open(dialog, layer, feature):
+def my_form_open_valve(dialog, layer, feature):
     
     #attributs de l'objet
     print feature.id()
