@@ -7,11 +7,15 @@ from PyQt4.QtGui import QDialog
 
 global featureId
 featureId = sys.var[0]
+# liste des identifiants des couches du projet oû l'archivage est possible / Attention à la structure du projet si une couche est rajoutée par la suite dans le projet
+layerIds = ["valve20130304110011497_xxx" , "od_part20140429113327995","hydrant20130304110004848"]
+
 
 def updateField():
     maCouche = iface.activeLayer()
     layerName = maCouche.name()
     formTitle = layerName + u" - Attributs d'entités"
+    layers = QgsMapLayerRegistry.instance().mapLayers() # liste des couches du projet
 
     for w in iface.mainWindow().findChildren(QDialog):
         if w.windowTitle() == formTitle and w.isActiveWindow():
@@ -40,7 +44,12 @@ def updateField():
                     num_v = 0
                     num_h = 0
                     num_i = 0
-                    for layer in QgsMapLayerRegistry.instance().mapLayers().values():
+                    for i in range(0,len(layerIds)):
+                        if layerIds[i] not in layers:
+                            text_layer = u"La couche avec ID = "+ str(layerIds[i]) + u" n'existe plus ou pas dans le projet, merci de vérifier la structure du projet sinon elle ne sera pas prise en compte dans l'archivage"
+                            msgBox.setText(text_layer)
+                            msgBox.exec_()
+                    for layer in layers.values():
                         uri = QgsDataSourceURI(layer.source())
                         name = uri.schema() + "." + uri.table()
                         if name in ["qwat_od.valve", "qwat_od.part" , "qwat_od.hydrant"]:
