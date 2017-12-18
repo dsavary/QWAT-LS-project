@@ -3,7 +3,7 @@
 from datetime import datetime
 from qgis.core import QgsFeatureRequest
 from qgis.utils import iface
-from PyQt4.QtGui import QDialog
+from PyQt4.QtGui import QDialog,QMessageBox,QInputDialog
 
 global featureId
 featureId = sys.var[0]
@@ -24,14 +24,16 @@ def updateField():
     vYear = u"year_end"
     vStatus = u"fk_status"
     for feature in maCouche.getFeatures(QgsFeatureRequest(int(featureId))):
-        msgBox = QtGui.QMessageBox()
-        if feature[vStatus] == 13002:
-            # print("conduite déjà archivée")
-            text_arch = u"La conduite ID ="+str(featureId) + u" a déjà été archivée en " + str(feature[vYear])
+        msgBox = QMessageBox()
+        if feature[vStatus] != 1301:
+            if feature[vStatus] == 13002:
+                text_arch = u"La conduite ID ="+str(featureId) + u" a déjà été archivée en " + str(feature[vYear])
+            else:
+                text_arch = u"La conduite ID ="+str(featureId) + u" ne peut être archivée si elle n'est pas en service"
             msgBox.setText(text_arch)
             msgBox.exec_()
         if feature[vStatus] != 13002:
-            input_rep = QtGui.QInputDialog()
+            input_rep = QInputDialog()
             year_end, ok = input_rep.getInt(None, u"Annee d'archivage ", u"indiquez l'ann\xe9e d'archive (4 chiffres)", datetime.now().year, 1800,2999, 1)
             if ok:
                 if not maCouche.isEditable():
