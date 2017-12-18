@@ -8,7 +8,7 @@ from PyQt4.QtGui import QDialog,QMessageBox,QInputDialog
 global featureId
 featureId = sys.var[0]
 # liste des identifiants des couches du projet oû l'archivage est possible / Attention à la structure du projet si une couche est rajoutée par la suite dans le projet
-layerIds = ["valve20130304110011497_xxx" , "od_part20140429113327995","hydrant20130304110004848"]
+layerIds = ["valve20130304110011497" , "od_part20140429113327995","hydrant20130304110004848"]
 
 
 def updateField():
@@ -54,8 +54,9 @@ def updateField():
                     for layer in layers.values():
                         uri = QgsDataSourceURI(layer.source())
                         name = uri.schema() + "." + uri.table()
-                        if name in ["qwat_od.valve", "qwat_od.part" , "qwat_od.hydrant"]:
+                        #if name in ["qwat_od.valve", "qwat_od.part" , "qwat_od.hydrant"]:
                         # if layer.name() == u"vannes" or layer.name() == u"\xe9l\xe9ments de montage" or layer.name() == u"hydrants" or layer.name() == u"introduction":
+                        if layer.id() in layerIds:
                             # print unicode(layer.name())
                             num_elements = 0
                             if not layer.isEditable():
