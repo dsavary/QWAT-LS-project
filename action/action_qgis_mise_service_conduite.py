@@ -3,7 +3,7 @@
 from datetime import datetime
 from qgis.core import QgsFeatureRequest
 from qgis.utils import iface
-from PyQt4.QtGui import QDialog
+from PyQt4.QtGui import QDialog,QMessageBox
 
 global featureId
 featureId = sys.var[0]
@@ -21,12 +21,12 @@ def updateField():
     vStatus = u"fk_status"
     year = datetime.now().year
     for feature in maCouche.getFeatures(QgsFeatureRequest(int(featureId))):
+        msgBox = QMessageBox()
         if feature[vStatus] == 1301:
-            msgBox = QtGui.QMessageBox()
             text_service = u"La conduite ID ="+str(featureId) + u" est déjà en service, depuis " + str(feature[vYear])
             msgBox.setText(text_service)
             msgBox.exec_()
-        if feature[vStatus] != 1301:
+        else:
             if not maCouche.isEditable():
                 maCouche.startEditing()
             feature[vStatus] = 1301
@@ -73,7 +73,6 @@ def updateField():
                         if name == "qwat_od.subscriber":
                             num_i = num_elements
 
-                msgBox = QtGui.QMessageBox()
                 text = u"La conduite ID ="+str(featureId)+ u" a \xe9t\xe9 mise en service avec l'ann\xe9e : " + str(feature[vYear])
                 if num_v > 0 or num_e > 0 or num_h > 0 or num_i > 0:
                     text += u"\n ainsi que :"
@@ -89,7 +88,5 @@ def updateField():
                 msgBox.exec_()
             else:
                 pass
-        else:
-            pass
 
 updateField()
