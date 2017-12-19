@@ -60,13 +60,14 @@ def updateField():
                         num_elements = 0
                         if not layer.isEditable():
                             layer.startEditing()
-                        for feat in layer.getFeatures(QgsFeatureRequest(feature.geometry().boundingBox())):
-                            if feat.geometry().intersects(feature.geometry().buffer(0.03, 3)):
+                        req = QgsFeatureRequest(feature.geometry().boundingBox()).setFilterExpression(' "fk_status" = \'103\' ')
+                        for feat in layer.getFeatures(req):
+                            if feat.geometry().intersects(feature.geometry()):
                                 num = 0
-                                for f in maCouche.getFeatures(QgsFeatureRequest(feat.geometry().boundingBox())):
-                                    if f.geometry().intersects(feat.geometry().buffer(0.03, 3)):
+                                for f in maCouche.getFeatures(QgsFeatureRequest(feat.geometry().boundingBox()).setFilterExpression(' "fk_status" != \'1301\' ')):
+                                    if f.geometry().intersects(feat.geometry()) and f.id() != featureId:
                                         num += 1
-                                if num == 1:
+                                if num == 0:
                                     if feat[vStatus] != 1301:
                                         feat[vStatus] = 1301
                                         if not feat[vYear] or feat[vYear] ==0:
