@@ -10,7 +10,6 @@ featureId = sys.var[0]
 # liste des identifiants des couches du projet oû l'archivage est possible / Attention à la structure du projet si une couche est rajoutée par la suite dans le projet
 layerIds = ["valve20130304110011497" , "od_part20140429113327995","hydrant20130304110004848"]
 
-
 def updateField():
     maCouche = iface.activeLayer()
     layerName = maCouche.name()
@@ -32,7 +31,7 @@ def updateField():
                 text_arch = u"La conduite ID ="+str(featureId) + u" ne peut être archivée si elle n'est pas en service"
             msgBox.setText(text_arch)
             msgBox.exec_()
-        if feature[vStatus] != 13002:
+        if feature[vStatus] == 1301:
             input_rep = QInputDialog()
             year_end, ok = input_rep.getInt(None, u"Annee d'archivage ", u"indiquez l'ann\xe9e d'archive (4 chiffres)", datetime.now().year, 1800,2999, 1)
             if ok:
@@ -55,20 +54,21 @@ def updateField():
                         uri = QgsDataSourceURI(layer.source())
                         name = uri.schema() + "." + uri.table()
                         #if name in ["qwat_od.valve", "qwat_od.part" , "qwat_od.hydrant"]:
-                        # if layer.name() == u"vannes" or layer.name() == u"\xe9l\xe9ments de montage" or layer.name() == u"hydrants" or layer.name() == u"introduction":
+                        #if layer.name() == u"vannes" or layer.name() == u"\xe9l\xe9ments de montage" or layer.name() == u"hydrants" or layer.name() == u"introduction":
                         if layer.id() in layerIds:
                             # print unicode(layer.name())
                             num_elements = 0
                             if not layer.isEditable():
                                 layer.startEditing()
-                            for feat in layer.getFeatures(QgsFeatureRequest(feature.geometry().boundingBox())):
-                                if feat.geometry().intersects(feature.geometry().buffer(0.03, 3)):
+                            req = QgsFeatureRequest(feature.geometry().boundingBox()).setFilterExpression(' "fk_status" = \'1301\' ')
+                            for feat in layer.getFeatures(req):
+                                if feat.geometry().intersects(feature.geometry()):
                                     num = 0
-                                    for f in maCouche.getFeatures(QgsFeatureRequest(feat.geometry().boundingBox())):
-                                        if f.geometry().intersects(feat.geometry().buffer(0.03, 3)):
+                                    for f in maCouche.getFeatures(QgsFeatureRequest(feat.geometry().boundingBox()).setFilterExpression(' "fk_status" != \'13002\' ')):
+                                        if f.geometry().intersects(feat.geometry())  and f.id() != featureId:
                                             num += 1
                                     # print("int",feat.id(),num)
-                                    if num == 1:
+                                    if num == 0:
                                         if feat[vStatus] != 13002:
                                             feat[vStatus] = 13002
                                             feat[vYear] = year_end
