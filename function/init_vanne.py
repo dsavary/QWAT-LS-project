@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 
-from PyQt4.QtGui import QLineEdit, QComboBox,QMessageBox
+from PyQt4.QtGui import QLineEdit,QComboBox,QMessageBox,QCheckBox
 from qgis.core import QgsFeatureRequest
 from qgis.utils import iface
 from qgis.gui import QgsMessageBar
