@@ -17,20 +17,21 @@ def my_form_open_pipe(dialog, layer, feature):
     #print feature[u"fk_pressurezone"]
     #print feature[u"fk_district"]
 
+    # mise à jour des attributs calé SISOL et précision
+    line_prec = dialog.findChild(QComboBox, "fk_precision")
+    line_cale_sisol = dialog.findChild(QCheckBox, "usr_cale_sisol")
+
+    def cale_sisol():
+        list_val = line_prec.currentText()
+        if list_val in [u"Pr\xe9cis", u"Report\xe9"]:
+            line_cale_sisol.setChecked(True)
+        else:
+            line_cale_sisol.setChecked(False)
+
+    line_prec.currentIndexChanged.connect(cale_sisol)
+
     if geom is not None and layer.isEditable():
 
-        # mise à jour des attributs calé SISOL et précision
-        line_prec = dialog.findChild(QComboBox, "fk_precision")
-        line_cale_sisol = dialog.findChild(QCheckBox, "usr_cale_sisol")
-
-        def cale_sisol():
-            list_val = line_prec.currentText()
-            if list_val in [u"Pr\xe9cis", u"Report\xe9"]:
-                line_cale_sisol.setChecked(True)
-            else:
-                line_cale_sisol.setChecked(False)
-
-        line_prec.currentIndexChanged.connect(cale_sisol)
 
         '''
         ids_prec = []
