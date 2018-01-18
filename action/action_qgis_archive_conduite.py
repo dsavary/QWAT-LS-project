@@ -8,7 +8,7 @@ from PyQt4.QtGui import QDialog,QMessageBox,QInputDialog
 global featureId
 featureId = sys.var[0]
 # liste des identifiants des couches du projet oû l'archivage est possible / Attention à la structure du projet si une couche est rajoutée par la suite dans le projet
-layerIds = ["valve20130304110011497" , "od_part20140429113327995","hydrant20130304110004848"]
+layerIds = ["valve20130304110011497" , "od_part20140429113327995","hydrant20130304110004848","usr_prc_point20170929004247666"]
 
 def updateField():
     maCouche = iface.activeLayer()
@@ -45,6 +45,7 @@ def updateField():
                     num_v = 0
                     num_h = 0
                     num_i = 0
+                    num_a = 0
                     for i in range(0,len(layerIds)):
                         if layerIds[i] not in layers:
                             text_layer = u"La couche avec ID = "+ str(layerIds[i]) + u" n'existe plus ou pas dans le projet, merci de vérifier la structure du projet sinon elle ne sera pas prise en compte dans l'archivage"
@@ -86,6 +87,8 @@ def updateField():
                             #if layer.name() == u"introduction":
                             if name == "qwat_od.subscriber":
                                 num_i = num_elements
+                            if name == "qwat_od.usr_prc_point":
+                                num_a = num_elements
 
                     text = u"La conduite ID ="+str(featureId)+ u" a \xe9t\xe9 archiv\xe9e en " + str(year_end)
                     if num_v > 0 or num_e > 0 or num_h > 0 or num_i > 0:
@@ -98,6 +101,8 @@ def updateField():
                             text += u"\n - " + str(num_h) + u" hydrants"
                         if num_i > 0:
                             text += u"\n - " + str(num_i) + u" introductions"
+                        if num_a > 0:
+                            text += u"\n - " + str(num_a) + u" \xe9l\xe9ments de protection cathodique"
                     msgBox.setText(text)
                     msgBox.exec_()
                 else:
