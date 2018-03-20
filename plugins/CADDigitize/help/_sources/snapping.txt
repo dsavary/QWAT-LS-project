@@ -1,0 +1,9 @@
+Snapping
+=====================
+
+You can use snapping for all functions. Some (which need tangents or modifying) needs segment snapping selected.
+
+
+All functions can be used with advanced digitizing (ex CADInput).
+
+

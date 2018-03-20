@@ -1,0 +1,757 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+    <customproperties/>
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="FONDS DE PLANS (RASTER)">
+      <customproperties/>
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="FONDS CADASTRAUX">
+        <customproperties/>
+        <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Plan_cadastral201702017051816543363927386" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_osm_bdcad_gris&amp;styles=default&amp;tileDimensions=DATE%3D2015&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Fond cadastral - Lausanne AGGLO">
+          <customproperties>
+            <property key="expandedLegendNodes"/>
+          </customproperties>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Checked" id="Fond_ASIT_VD___cadastral201702017051816543364021507" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_cadastral&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml" name="Fond cadastral - ASIT VD">
+          <customproperties>
+            <property key="expandedLegendNodes"/>
+          </customproperties>
+        </layer-tree-layer>
+        <layer-tree-group expanded="0" checked="Qt::Unchecked" mutually-exclusive="1" name="AUTRES FONDS PLAN " mutually-exclusive-child="0">
+          <customproperties/>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Plan_Ville20172017051816543363915683" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_osm_bdcad_couleur&amp;styles=default&amp;tileDimensions=DATE%3D2015&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Plan Ville">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___couleur201720120172017020170201705181654336406026" source="contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=all&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_couleur&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml" name="Fond ASIT VD - couleur">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_ASIT_VD___niveaux_de_gris_sans_labels20172017051816543364016536" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml" name="Fond ASIT VD - niveaux de gris sans labels">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="ORTHOPHOTOS">
+        <customproperties/>
+        <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Fond_de_plan_ASIT_VD___pour_orthophotos20170201702017020170201702017051816543363813347" source="contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_asitvd.fond_pourortho&amp;password=geoservice564&amp;styles=&amp;url=https://secure.asitvd.ch/proxy/ogc/asitvd-wms-fonds&amp;username=geoservice_scc" name="Réseau de rues (superposition orthophotos)">
+          <customproperties>
+            <property key="expandedLegendNodes"/>
+          </customproperties>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Lausanne_201620172017051816543363825742" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lidar_2016&amp;styles=default&amp;tileDimensions=DATE%3D2016&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Lausanne 2016">
+          <customproperties>
+            <property key="expandedLegendNodes"/>
+          </customproperties>
+        </layer-tree-layer>
+        <layer-tree-group expanded="0" checked="Qt::Unchecked" mutually-exclusive="1" name="AUTRES ORTHOPHOTOS" mutually-exclusive-child="1">
+          <customproperties/>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Lausanne_201220170201705181654336388588" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lidar_2012&amp;styles=default&amp;tileDimensions=DATE%3D2012&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Lausanne 2012">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Lausanne_200820172017051816543363924004" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lausanne_2008&amp;styles=default&amp;tileDimensions=DATE%3D2008&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Lausanne 2008">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Lausanne_2001201702017051816543363930130" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lausanne_2001&amp;styles=default&amp;tileDimensions=DATE%3D2001&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Lausanne 2001">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Vaud_200420170201705181654336395530" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_vaud_2004&amp;styles=default&amp;tileDimensions=DATE%3D2004&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Vaud 2004">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Orthophoto_Vaud_2006201702017051816543363922139" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_vaud_2006&amp;styles=default&amp;tileDimensions=DATE%3D2006&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Orthophoto Vaud 2006">
+            <customproperties>
+              <property key="expandedLegendNodes"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="CARTES NATIONALES">
+        <customproperties/>
+        <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Carte_nationale20172017051816543364018701" source="SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_carte_nationale_msgroup&amp;styles=default&amp;tileDimensions=DATE%3D2014&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml" name="Carte nationale">
+          <customproperties>
+            <property key="expandedLegendNodes"/>
+          </customproperties>
+        </layer-tree-layer>
+      </layer-tree-group>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer minimumScale="5001" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="1">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Plan_cadastral201702017051816543363927386</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_osm_bdcad_gris&amp;styles=default&amp;tileDimensions=DATE%3D2015&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond cadastral - Lausanne AGGLO</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="Fond cadastre vecteur">
+        <map-layer-style name="">
+          <qgis version="2.18.13" minimumScale="5001" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="0" contrast="0"/>
+              <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+          </qgis>
+        </map-layer-style>
+        <map-layer-style name="Fond cadastre vecteur"/>
+        <map-layer-style name="Fond gris">
+          <qgis version="2.18.13" minimumScale="5001" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="0" contrast="0"/>
+              <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>7</blendMode>
+          </qgis>
+        </map-layer-style>
+        <map-layer-style name="nb 500">
+          <qgis version="2.18.13" minimumScale="501" maximumScale="1e+08" hasScaleBasedVisibilityFlag="1">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="0" contrast="0"/>
+              <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+          </qgis>
+        </map-layer-style>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="5001" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>420000</xmin>
+        <ymin>-674000</ymin>
+        <xmax>1444000</xmax>
+        <ymax>350000</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___cadastral201702017051816543364021507</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_cadastral&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond cadastral - ASIT VD</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="Fond gris">
+        <map-layer-style name="">
+          <qgis version="2.18.13" minimumScale="5001" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="0" contrast="0"/>
+              <huesaturation colorizeGreen="47" colorizeOn="0" colorizeRed="48" colorizeBlue="47" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+          </qgis>
+        </map-layer-style>
+        <map-layer-style name="Fond cadastre vecteur">
+          <qgis version="2.18.13" minimumScale="5001" maximumScale="1e+08" hasScaleBasedVisibilityFlag="1">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="0" contrast="0"/>
+              <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+          </qgis>
+        </map-layer-style>
+        <map-layer-style name="Fond gris"/>
+        <map-layer-style name="Fond noir">
+          <qgis version="2.18.13" minimumScale="5001" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+            <pipe>
+              <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+                <rasterTransparency/>
+              </rasterrenderer>
+              <brightnesscontrast brightness="-160" contrast="0"/>
+              <huesaturation colorizeGreen="47" colorizeOn="0" colorizeRed="48" colorizeBlue="47" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+              <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>11</blendMode>
+          </qgis>
+        </map-layer-style>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="47" colorizeOn="0" colorizeRed="48" colorizeBlue="47" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>11</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Plan_Ville20172017051816543363915683</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_osm_bdcad_couleur&amp;styles=default&amp;tileDimensions=DATE%3D2015&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Plan Ville</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>420000</xmin>
+        <ymin>-674000</ymin>
+        <xmax>1444000</xmax>
+        <ymax>350000</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___couleur201720120172017020170201705181654336406026</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=all&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_couleur&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - couleur</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>420000</xmin>
+        <ymin>-674000</ymin>
+        <xmax>1444000</xmax>
+        <ymax>350000</ymax>
+      </extent>
+      <id>Fond_ASIT_VD___niveaux_de_gris_sans_labels20172017051816543364016536</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=asitvd.fond_gris_sans_labels&amp;referer=*.lausanne.ch&amp;styles=default&amp;tileDimensions=ELEVATION%3D0;DIM1%3Ddefault&amp;tileMatrixSet=21781&amp;url=https://ows.asitvd.ch/wmts/1.0.0/WMTSCapabilities.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fond ASIT VD - niveaux de gris sans labels</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>420000</xmin>
+        <ymin>30000</ymin>
+        <xmax>900000</xmax>
+        <ymax>350000</ymax>
+      </extent>
+      <id>Fond_de_plan_ASIT_VD___pour_orthophotos20170201702017020170201702017051816543363813347</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_asitvd.fond_pourortho&amp;password=geoservice564&amp;styles=&amp;url=https://secure.asitvd.ch/proxy/ogc/asitvd-wms-fonds&amp;username=geoservice_scc</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Réseau de rues (superposition orthophotos)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Lausanne_201620172017051816543363825742</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lidar_2016&amp;styles=default&amp;tileDimensions=DATE%3D2016&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Lausanne 2016</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Lausanne_201220170201705181654336388588</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lidar_2012&amp;styles=default&amp;tileDimensions=DATE%3D2012&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Lausanne 2012</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Lausanne_200820172017051816543363924004</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lausanne_2008&amp;styles=default&amp;tileDimensions=DATE%3D2008&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Lausanne 2008</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Lausanne_2001201702017051816543363930130</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_lausanne_2001&amp;styles=default&amp;tileDimensions=DATE%3D2001&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Lausanne 2001</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Vaud_200420170201705181654336395530</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_vaud_2004&amp;styles=default&amp;tileDimensions=DATE%3D2004&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Vaud 2004</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>523000</xmin>
+        <ymin>146000</ymin>
+        <xmax>556000</xmax>
+        <ymax>166000</ymax>
+      </extent>
+      <id>Orthophoto_Vaud_2006201702017051816543363922139</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=orthophotos_ortho_vaud_2006&amp;styles=default&amp;tileDimensions=DATE%3D2006&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Orthophoto Vaud 2006</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>420000</xmin>
+        <ymin>30000.00000076805008575</ymin>
+        <xmax>906399.99999883258715272</xmax>
+        <ymax>350000</ymax>
+      </extent>
+      <id>Carte_nationale20172017051816543364018701</id>
+      <datasource>SmoothPixmapTransform=1&amp;contextualWMSLegend=0&amp;crs=EPSG:21781&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fonds_geo_carte_nationale_msgroup&amp;styles=default&amp;tileDimensions=DATE%3D2014&amp;tileMatrixSet=swissgrid_05&amp;url=http://tiles01.lausanne.ch/tiles/1.0.0/WMTSlausanneSCC.xml</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Carte nationale</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1919</srsid>
+          <srid>21781</srid>
+          <authid>EPSG:21781</authid>
+          <description>CH1903 / LV03</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </maplayers>
+</qlr>

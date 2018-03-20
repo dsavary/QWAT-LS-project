@@ -1,0 +1,16 @@
+
+[general]
+name=Item Browser
+description=Browse a multiple selection with highlighting of current feature.
+about=Browse a multiple selection with highlighting of current feature.
+version=2.5
+qgisMinimumVersion=2.6
+author=Denis Rouzaud
+email=denis.rouzaud@gmail.com
+
+icon=icons/itembrowser.svg
+tags=item,browser,feature, multiple,selection
+homepage=http://3nids.github.io/itembrowser
+tracker=https://github.com/3nids/itembrowser/issues
+repository=https://github.com/3nids/itembrowser
+

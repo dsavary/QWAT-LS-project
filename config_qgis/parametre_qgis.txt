@@ -1,0 +1,34 @@
+
+Emplacement des symboles SVG :
+pour les données cadastrales
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\cadastre\STYLE\symbol
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\cadastre\STYLE\symbol\cadastre
+Pour les données du réseau d'eau
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\eauservice\qwat\symbols
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\eauservice\qwat\symbols
+
+
+Lien pour paramétrer la recherche:
+http://map.lausanne.ch/main/wsgi/fulltextsearch
+
+emplacement PLUGIN spécifique :
+QGIS_PLUGINPATH  \\geodata.lausanne.ch\data\QGIS_projet\eauservice\qwat_lausanne\plugins
+
+
+PLUGIN à installer:
+- memory layer saver
+- CAD NODE TOOL
+- CADDIGITIZE
+- VDL tool
+- QuickFinder
+- Zoom to point
+- Intersect It
+- Form Value Relation
+
+
+
+\\geodata.lausanne.ch\data
+
+
+Autres docs ou référence : 
+http://www.geoinformations.developpement-durable.gouv.fr/prise-en-main-de-qgis-a2907.html

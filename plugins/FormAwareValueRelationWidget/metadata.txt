@@ -1,0 +1,49 @@
+[general]
+name=Form Value Relation
+qgisMinimumVersion=2.12
+qgisMaximumVersion=2.99
+description=Form (Aware) Value Relation Widget: an enhanced Value Relation widget and a custom function to read all the form values and build dynamic filters for your drill-down forms.
+Note: when accessed from the attribute table, dynamic filters will not work and this plugin will not behave differently from the standard Value Relation Widget.
+
+    This plugin has been 50% funded by "ARPA Piemonte"
+
+version=version 1.5
+author=Alessandro Pasotti for ARPA Piemonte
+email=elpaso@itopen.it
+
+
+changelog=
+    1.5 fix unicode decode error when using non filter expressions
+    1.4 avoid crash in attribute table by disabling filters when not in identify form mode
+    1.3 fixed #3
+    1.2 fixed #2
+    1.1 Disabled debug messages and fixed #1
+    1.0 first version
+
+tags=forms
+
+tracker=https://github.com/elpaso/qgis-formawarevaluerelationwidget/issues
+homepage=http://www.itopen.it/a-new-qgis-plugin-allows-dynamic-filtering-of-values-in-forms
+repository=https://github.com/elpaso/qgis-formawarevaluerelationwidget
+
+experimental=False
+
+about=This is a core-enhancement plugin that allow the implementation of complex
+    dynamic filters in QGIS attribute forms.
+
+    This plugin provides a "Form Value Relation" widget (very similar clone of
+    QgsValueRelationWidgetWrapper) that refreshes the related item values on
+    every change in the form values and that makes available the form values to the
+    context. The expression is re-evaluated every time the form changes if
+    the changed fields are part of the expression.
+
+    A custom expression function "CurrentFormValue()" allow to read the form
+    values from  the expression context.
+
+    This widget can be used to implement drill-down forms, where the values available
+    in one field depend on the values of other fields.
+
+    This plugin has been funded at 50% by "ARPA Piemonte"
+
+
+icon=icons/icon.png

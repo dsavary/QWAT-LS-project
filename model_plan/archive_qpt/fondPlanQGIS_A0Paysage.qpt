@@ -1,0 +1,162 @@
+<Composer title="Composeur 3" visible="1">
+ <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{fc2f9b76-0393-4bc3-9e0b-708ce0e99722}" alignmentSnap="1" printResolution="300" paperWidth="1189" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="841" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Position exacte des conduites à déterminer par sondage" htmlState="0" halign="4">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="26.5128" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="317.538" y="26.5128" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="534.384" outlineWidth="0.3" excludeFromExports="0" uuid="{ed110de3-dade-4a34-96d6-f36c2151f0f5}" height="6.2" itemRotation="0" frame="false" pagex="317.538">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="26.1056" svgFillColor="0,0,0,255" svgBorderColor="255,255,255,255" northMode="0" file="//lausanne_ch/data/VDL/Geo_Public/QGIS_projet/eauservice/qwat/symbols/wind_rose.svg" northOffset="0" pictureHeight="26.1056" mapId="0" anchorPoint="0">
+   <ComposerItem pagey="50.066" page="1" id="Nord" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="1104.06" y="50.066" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="30.3868" outlineWidth="0.3" excludeFromExports="0" uuid="{f3c06554-0961-415f-92ef-c50c0838ecb5}" height="26.1056" itemRotation="0" frame="false" pagex="1104.06">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="118.759" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="25" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel=" m">
+   <scaleBarFont description="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" style=""/>
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="25.3029" page="1" id="echelle" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="1094.39" y="25.3029" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="46.0958" outlineWidth="0.3" excludeFromExports="0" uuid="{77e19d90-4957-4902-aabb-5e33844506af}" height="8.61978" itemRotation="0" frame="false" pagex="1094.39">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="112.446" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../../../../ENCADRER/E_DocRef/E_DocRef_Doc/MODELES service de l'eau/LOGO/LausanneGris.tif" northOffset="0" pictureHeight="14.0557" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="8.05562" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="1022.59" y="8.05562" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="112.446" outlineWidth="0.3" excludeFromExports="0" uuid="{7f760e2a-3e61-41c3-bc66-b2d0cb6e7880}" height="23.7488" itemRotation="0" frame="false" pagex="1022.59">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Echelle:" htmlState="0" halign="1">
+   <LabelFont description="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="25.3029" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="1072.32" y="25.3029" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="80.7151" outlineWidth="0.3" excludeFromExports="0" uuid="{ffc0eee0-a4a3-429b-9562-bd6457f9f5e3}" height="8.31667" itemRotation="0" frame="false" pagex="1072.32">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Lausanne, le [%  concat(day(now()) ,'.',month(now()),'.',year(now()))%]" htmlState="0" halign="1">
+   <LabelFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="26.5128" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="37.4069" y="26.5128" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="209.645" outlineWidth="0.3" excludeFromExports="0" uuid="{03b434a6-2f3b-47e2-b1b8-ec04f27cb610}" height="10.5833" itemRotation="0" frame="false" pagex="37.4069">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="45.3122" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../../../../ENCADRER/E_DocRef/E_DocRef_Doc/MODELES service de l'eau/LOGO/Logo _service de l'eau.jpg" northOffset="0" pictureHeight="20.2874" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="8.05562" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="37.4069" y="8.05562" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="209.645" outlineWidth="0.3" excludeFromExports="0" uuid="{ad4bf16a-5b23-4b32-a13f-168d3110bee2}" height="20.2874" itemRotation="0" frame="false" pagex="37.4069">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Plan de situation du réseau d'eau potable" htmlState="0" halign="4">
+   <LabelFont description="MS Shell Dlg 2,20,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="6.11481" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="33.4238" y="6.11481" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="1108.5" outlineWidth="0.3" excludeFromExports="0" uuid="{991eb74c-cef7-420a-98c1-c556dc416c8d}" height="28.7368" itemRotation="0" frame="true" pagex="33.4238">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="154560.67170406770310365" xmin="533370.64601350808516145" ymax="154718.52553491041180678" xmax="533603.97612127102911472"/>
+   <LayerSet/>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="198,198,198,255" show="1" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="1" topFrameDivisions="0" uuid="{400f38bd-4f7c-4fbe-b1d7-d1d014817015}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="100" gridFrameSideFlags="15" intervalY="100" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.10000000000000001" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="16" gridFrameStyle="5" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="diameter"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+      </layer>
+     </symbol>
+    </markerStyle>
+    <spatialrefsys>
+     <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs</proj4>
+     <srsid>1919</srsid>
+     <srid>21781</srid>
+     <authid>EPSG:21781</authid>
+     <description>CH1903 / LV03</description>
+     <projectionacronym>somerc</projectionacronym>
+     <ellipsoidacronym>bessel</ellipsoidacronym>
+     <geographicflag>false</geographicflag>
+    </spatialrefsys>
+    <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+   <ComposerItem pagey="43.5604" page="1" id="Carte" lastValidViewScaleFactor="1.51181" positionMode="0" positionLock="true" x="33.4738" y="43.5604" visibility="1" zValue="1" background="true" transparency="19" frameJoinStyle="miter" blendMode="0" width="1108.4" outlineWidth="0.4" excludeFromExports="0" uuid="{fc2f9b76-0393-4bc3-9e0b-708ce0e99722}" height="749.861" itemRotation="0" frame="true" pagex="33.4738">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerMap>
+  <customproperties/>
+ </Composition>
+ <Atlas hideCoverage="true" coverageLayer="pipe20170404151749071" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression=""/>
+</Composer>

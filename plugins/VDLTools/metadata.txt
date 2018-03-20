@@ -1,0 +1,49 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.
+# Mandatory items:
+
+[general]
+name=VDL Tools
+qgisMinimumVersion=2.18.0
+description=Tools needed by the Ville de Lausanne
+version=0.6
+author=Christophe Gusthiot (Ville de Lausanne)
+email=cgusthiot@gmail.com
+
+about=This plugin contains tools needed by the Ville de Lausanne for water system.
+    - a tool to duplicate a feature at a given distance (geometry not kept)
+    - a tool to move/copy a feature, driven by a vertex (geometry kept)
+    - a tool to make an elevation profile of a 3d line
+    - a tool to make a MNT profile along a polyline
+    - a tool to create temporary circles from snapped points
+    - a tool to interpolate elevation on a 3d edge by adding a 3d point
+    - a tool to extrapolate elevation at the end of a 3d line
+    - a tool to pick the elevation of different layers at a position
+    - a tool to get attributes for different objects from different layers
+
+tracker=https://github.com/gusthiot/VDLTools/issues
+repository=https://github.com/gusthiot/VDLTools
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=
+
+homepage=https://github.com/gusthiot/VDLTools
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

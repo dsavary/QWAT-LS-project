@@ -1,0 +1,122 @@
+<Composer title="ComposeurAnnexes" visible="1">
+ <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{4f91026d-d41f-4d08-9353-b5a3b1a445ef}" alignmentSnap="1" printResolution="300" paperWidth="594" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="420" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Création:" htmlState="0" halign="1">
+   <LabelFont description="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="405.871" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="497.819" y="405.871" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90.0854" outlineWidth="0.3" excludeFromExports="0" uuid="{86b6a764-ce76-4763-80cb-cadf83b14d55}" height="10.5833" itemRotation="0" frame="false" pagex="497.819">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Date: [% concat(  day( now()) ,' .', month(now()),'.', year(now()))%]" htmlState="0" halign="4">
+   <LabelFont description="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="405.871" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="7.40833" y="405.871" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="73.025" outlineWidth="0.3" excludeFromExports="0" uuid="{6aac0bd9-c46f-4812-9fea-32c2a49aa0de}" height="10.5833" itemRotation="0" frame="false" pagex="7.40833">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="95.7792" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../Image/LausanneGris.png" northOffset="0" pictureHeight="11.9724" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="17.4625" page="1" id="LogoLausanne" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="479.979" y="17.4625" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="95.7792" outlineWidth="0.3" excludeFromExports="0" uuid="{100194d7-c74e-4244-a584-cea2c955121f}" height="23.8125" itemRotation="0" frame="false" pagex="479.979">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="75.6418" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../Image/Logo_service_eau.png" northOffset="0" pictureHeight="33.8667" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="7.40833" page="1" id="LogoService" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="19.05" y="7.40833" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.1313" outlineWidth="0.3" excludeFromExports="0" uuid="{060c0556-50bf-4578-ac74-7d563d606859}" height="33.8667" itemRotation="0" frame="false" pagex="19.05">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Extrait des communes alimentées au détail" htmlState="0" halign="4">
+   <LabelFont description="MS Shell Dlg 2,36,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="6.87917" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="96.1813" y="6.87917" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="401.637" outlineWidth="0.3" excludeFromExports="0" uuid="{133005bd-216c-4d85-8f7b-bbebabb5cd20}" height="34.3958" itemRotation="0" frame="false" pagex="96.1813">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+   <Extent ymin="0" xmin="0" ymax="0" xmax="0"/>
+   <LayerSet/>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5e703684-3611-475d-9102-30f94b92b655}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="diameter"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+      </layer>
+     </symbol>
+    </markerStyle>
+    <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+   <ComposerItem pagey="48" page="1" id="" lastValidViewScaleFactor="1.93642" positionMode="0" positionLock="false" x="21.9542" y="48" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="556.979" outlineWidth="0.3" excludeFromExports="0" uuid="{4f91026d-d41f-4d08-9353-b5a3b1a445ef}" height="350.938" itemRotation="0" frame="false" pagex="21.9542">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerMap>
+  <customproperties/>
+ </Composition>
+</Composer>

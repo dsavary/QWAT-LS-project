@@ -1,0 +1,40 @@
+Préférences
+=============
+
+
+Cercle
+-------
+Nombre de segment par quadrant. QGis donne par défaut 8.
+
+Insérer image de différents résultat
+
+Ellipse
+--------
+Nombre de sommet sur l'ellipse
+
+idem insérer image
+
+
+Regular polygon
+----------------
+Nombre de côté du polygone
+
+idem image
+
+
+
+Arcs
+-----
+Feature segmentation (discretisation)
+
+On coupe l'arc en ligne
+Soit à change angle ou à chaque longueur
+
+Direction de l'angle
+
+Sens des aiguilles
+Sens contraire
+
+Création de polygone
+Si l'arc est pour un polygone :
+Création d'un morceau de camembert ou arrêt sur l'arc

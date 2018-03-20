@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="179.79113 53.483333 108 107.99998"
+   id="svg2"
+   version="1.1"
+   width="108"
+   height="107.99998">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs19" />
+  <g
+     id="g4144">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3.80435991;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4159"
+       width="96.195641"
+       height="96.195625"
+       x="185.6933"
+       y="58.470261" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff7f00;stroke-width:5.33333302;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4142"
+       width="12.299267"
+       height="5.3338733"
+       x="228.40594"
+       y="142.16667" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff7f00;stroke-width:5.45391417;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4153"
+       width="39.805122"
+       height="3.9234297"
+       x="214.61507"
+       y="123.18449" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff7f00;stroke-width:5.70799971;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4155"
+       width="58.225376"
+       height="2.1979201"
+       x="205.27985"
+       y="105.55797" />
+    <ellipse
+       style="fill:#ff7f00;fill-opacity:1;stroke:#ff7f00;stroke-width:3.99999952;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4157"
+       cx="234.63049"
+       cy="75.819641"
+       rx="11.42857"
+       ry="11.642434" />
+  </g>
+</svg>

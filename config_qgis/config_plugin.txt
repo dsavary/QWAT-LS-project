@@ -1,0 +1,19 @@
+
+QuickFinder
+
+recherche adresse VAUD
+http://www.geo.vd.ch/main/wsgi/fulltextsearch
+EPSG:21781
+
+Fichier de recherche :
+//geodata.lausanne.ch/data/QGIS_projet/eauservice/qwat_lausanne/search/config_search_qwat.qfts
+
+
+VDL tool
+
+Memory point
+Memory line
+qwat_lausanne3d
+qwat_vl
+
+http://map.lausanne.ch/main/wsgi/profile.json

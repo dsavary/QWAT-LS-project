@@ -1,0 +1,34 @@
+<!DOCTYPE shortcuts>
+<qgsshortcuts version="1.0" locale="fr_CH">
+    <act shortcut="K" name="A partir d'une intersection"/>
+    <act shortcut="A" name="Action de l'entité"/>
+    <act shortcut="Ctrl+E" name="Ajouter une entité"/>
+    <act shortcut="Ctrl+T" name="Annotation de texte"/>
+    <act shortcut="" name="Annuler sur la couches sélectionnée"/>
+    <act shortcut="" name="Annuler sur toutes les couches"/>
+    <act shortcut="E" name="Basculer en mode édition"/>
+    <act shortcut="Ctrl+D" name="Dupliquer un objet"/>
+    <act shortcut="Alt+D" name="Déplacer l'entité"/>
+    <act shortcut="Ctrl+Alt+A" name="Désélectionner toutes les entités"/>
+    <act shortcut="S" name="Enregistrer les couches sélectionnées"/>
+    <act shortcut="V" name="Enregistrer les modifications de la couche"/>
+    <act shortcut="Alt+S" name="Enregistrer toutes les couches"/>
+    <act shortcut="F" name="Fusionner les entités sélectionnées"/>
+    <act shortcut="" name="Gestionnaire de composeurs"/>
+    <act shortcut="I" name="Identifier les entités"/>
+    <act shortcut="U" name="Interpoler l'altitude d'un vertex et d'un point au milieu d'une ligne"/>
+    <act shortcut="G" name="Modifier les Attributs des Entités Sélectionnées"/>
+    <act shortcut="M" name="NODE"/>
+    <act shortcut="F4" name="Numerical Digitize"/>
+    <act shortcut="F3" name="Options d'accrochage..."/>
+    <act shortcut="N" name="Outil de nœud"/>
+    <act shortcut="Z" name="Profil d'une ligne"/>
+    <act shortcut="W" name="Retourner à l'étape précédente sur la couches sélectionnée"/>
+    <act shortcut="Alt+W" name="Retourner à l'étape précédente sur toutes les couches"/>
+    <act shortcut="Q" name="Se déplacer dans la carte"/>
+    <act shortcut="" name="Sélectionner des Entités Par Valeur..."/>
+    <act shortcut="R" name="Sélectionner l'entité(s)"/>
+    <act shortcut="" name="Sélectionner toutes les entités"/>
+    <act shortcut="O" name="place une orientation"/>
+    <act shortcut="L" name="placer une distance"/>
+</qgsshortcuts>

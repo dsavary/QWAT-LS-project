@@ -1,0 +1,2 @@
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\cadastre\STYLE\symbol\cadastre
+\\lausanne_ch\data\VDL\Geo_Public\QGIS_projet\eauservice\qwat\symbols

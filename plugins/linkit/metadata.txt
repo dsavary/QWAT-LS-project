@@ -1,0 +1,15 @@
+
+[general]
+name=Link It
+description=Link It offers an easy way to link features on the map from the available relations in the project
+version=5.0.2
+qgisMinimumVersion=2.5
+author=Denis Rouzaud
+email=denis.rouzaud@gmail.com
+
+icon=icons/linkit.png
+tags=link,item browser,feature,associate
+homepage=http://3nids.github.io/linkit
+tracker=https://github.com/3nids/linkit/issues
+repository=https://github.com/linkit/intersectit
+

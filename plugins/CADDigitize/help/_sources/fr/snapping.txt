@@ -1,0 +1,10 @@
+Accrochage aux objets
+=====================
+
+Il est possible d'utiliser l'accrochage aux entités avec QGis 2.6 et 2.8.
+
+Pour la version 2.8, il faut revenir à l'ancien mode de QGis 2.6 (désormais appellé mode avancé).
+
+Un test est en cours pour supprimer l'accrochage et hériter des préférences de la numérisation avancée (CADInput).
+
+

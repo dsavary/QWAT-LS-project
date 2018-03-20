@@ -1,0 +1,94 @@
+<Composer title="Plan A1 paysage (eau)" visible="1">
+ <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{c7b0e484-af2e-485f-9e9f-37d81ef3b843}" alignmentSnap="1" printResolution="300" paperWidth="841" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="594" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Position exacte des conduites &#xa;à déterminer par sondage" htmlState="0" halign="4">
+   <LabelFont description="Arial,14,-1,5,75,0,0,0,0,0" style=""/>
+   <FontColor red="255" blue="0" green="0"/>
+   <ComposerItem pagey="543.744" page="1" id="" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="733.145" y="543.744" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.396" outlineWidth="0.3" excludeFromExports="0" uuid="{61995092-5572-45c7-a00a-c561fc23ae69}" height="16.523" itemRotation="0" frame="true" pagex="733.145">
+    <FrameColor alpha="255" red="255" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="245" blue="175" green="186"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="25.601" svgFillColor="0,0,0,255" svgBorderColor="255,255,255,255" northMode="0" file="//lausanne_ch/data/VDL/Geo_Public/QGIS_projet/eauservice/qwat/symbols/wind_rose.svg" northOffset="0" pictureHeight="25.601" mapId="0" anchorPoint="0">
+   <ComposerItem pagey="44.9434" page="1" id="Nord" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="785.09" y="44.9434" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="25.601" outlineWidth="0.3" excludeFromExports="0" uuid="{55470621-5a3d-46de-a152-15079e6f3db7}" height="35" itemRotation="0" frame="false" pagex="785.09">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="125.149" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="25" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="2" maxBarWidth="150" height="3" boxContentSpace="1" mapId="0" unitLabel=" m">
+   <scaleBarFont description="Arial,20,-1,5,75,0,0,0,0,0" style=""/>
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="28.494" page="1" id="echelle" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="414.051" y="28.494" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="25.9183" outlineWidth="0.3" excludeFromExports="0" uuid="{90ac9ea5-8c6a-4a26-bc6f-cf0053d724e5}" height="9.05208" itemRotation="0" frame="false" pagex="414.051">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="50" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//geodata.lausanne.ch/data/QGIS_projet/eauservice/qwat_lausanne/model_plan/logo/LausanneGris.tif" northOffset="0" pictureHeight="6.25" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="16.426" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="767.677" y="16.426" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="50" outlineWidth="0.3" excludeFromExports="0" uuid="{6e79679b-bc31-4844-94ec-e64689cfcbcf}" height="8.254" itemRotation="0" frame="false" pagex="767.677">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Lausanne, le [%  concat(day(now()) ,'.',month(now()),'.',year(now()))%]" htmlState="0" halign="2">
+   <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="570.78" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="770.024" y="570.78" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="47.653" outlineWidth="0.3" excludeFromExports="0" uuid="{08503f63-754c-478a-bcdf-c68a307e5362}" height="17.4192" itemRotation="0" frame="false" pagex="770.024">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//geodata.lausanne.ch/data/QGIS_projet/eauservice/qwat_lausanne/model_plan/logo/Logo _service de l'eau.jpg" northOffset="0" pictureHeight="15.6704" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="15.267" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="18.497" y="15.267" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35" outlineWidth="0.3" excludeFromExports="0" uuid="{53d77079-e6cf-4f2a-a965-442a7f22d960}" height="16.827" itemRotation="0" frame="false" pagex="18.497">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Plan de situation du réseau d'eau potable" htmlState="0" halign="4">
+   <LabelFont description="Arial,20,-1,5,75,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="2.5642" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="18.327" y="2.5642" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="799.35" outlineWidth="0.3" excludeFromExports="0" uuid="{5088a8c8-f535-4ddf-b612-adf67ffa2ec2}" height="44.2316" itemRotation="0" frame="false" pagex="18.327">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="8 IMPRESSION - plan 200" id="0" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="153903.26066730637103319" xmin="540107.24046324717346579" ymax="154008.01456039780168794" xmax="540266.84046341001521796"/>
+   <LayerSet/>
+   <Grid/>
+   <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+   <ComposerItem pagey="41.319" page="1" id="Carte" lastValidViewScaleFactor="0.636099" positionMode="0" positionLock="true" x="18.527" y="41.319" visibility="1" zValue="1" background="true" transparency="19" frameJoinStyle="miter" blendMode="0" width="798.95" outlineWidth="0.4" excludeFromExports="0" uuid="{c7b0e484-af2e-485f-9e9f-37d81ef3b843}" height="524.393" itemRotation="0" frame="true" pagex="18.527">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerMap>
+  <customproperties/>
+ </Composition>
+</Composer>

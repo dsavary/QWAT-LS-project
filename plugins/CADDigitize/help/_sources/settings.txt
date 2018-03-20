@@ -1,0 +1,103 @@
+Settings
+=============
+
+
+Cercle
+-------
+Number of segment by quadrant. QGis's default is 8.
+
+.. image:: images/en/SettingsCircle.png
+
+Examples:
+
++----------------------------------+-----------------------------------+
+| 3 segments by quadrant           | 36 segments by quadrant           |
++----------------------------------+-----------------------------------+
+| .. image:: images/Circle3q.png   | .. image:: images/Circle36q.png   |
++----------------------------------+-----------------------------------+
+
+
+Ellipse
+--------
+Number of node on the ellipse
+
+
+.. image:: images/en/SettingsEllipse.png
+
+Examples:
+
++----------------------------------+-----------------------------------+
+| 4 nodes                          | 40 nodes                          |
++----------------------------------+-----------------------------------+
+| .. image:: images/Ellipse4.png   | .. image:: images/Ellipse40.png   |
++----------------------------------+-----------------------------------+
+
+
+Regular polygon
+----------------
+Number of sides of the Regular Polygon
+
+.. image:: images/en/SettingsRegularPolygon.png
+
+Examples:
+
++----------------------------------+-----------------------------------+-----------------------------------+
+| 3 Sides                          | 8 sides                           | 800 sides                         |
++----------------------------------+-----------------------------------+-----------------------------------+
+| .. image:: images/RP3.png        | .. image:: images/RP8.png         | .. image:: images/RP800.png       |
++----------------------------------+-----------------------------------+-----------------------------------+
+
+
+
+Arcs
+-----
+Feature segmentation:
+
+Change arc to a line with desired segmentation
+Segmentation can be done with a defined angle or a length of line
+
+Angle direction:
+
+ClockWise
+Counter ClockWise
+
+For polygon:
+Arc can be converted to polygon by Pie Segment or Chord
+
+.. image:: images/en/SettingsArc.png
+
+Examples with options bar:
+
++-------------------------------------------------------+
+| Images                                                |
++-------------------------------------------------------+
+| .. image:: images/Arc-Angle1.png                      |
++-------------------------------------------------------+
+| .. image:: images/Arc-Angle41.png                     |
++-------------------------------------------------------+
+| .. image:: images/Arc-ChordClockAngle.png             |
++-------------------------------------------------------+
+| .. image:: images/Arc-ChordCounterAngle.png           |
++-------------------------------------------------------+
+| .. image:: images/Arc-PieClockAngle.png               |
++-------------------------------------------------------+
+| .. image:: images/Arc-PieCounterAngle.png             |
++-------------------------------------------------------+
+| .. image:: images/Arc-Pitch1.png                      |
++-------------------------------------------------------+
+| .. image:: images/Arc-Pitch10.png                     |
++-------------------------------------------------------+
+| .. image:: images/ArcCenter2PointClockwise.png        |
++-------------------------------------------------------+
+| .. image:: images/ArcCenter2PointCounterClockwise.png |
++-------------------------------------------------------+
+| .. image:: images/CircleAngleClockWise.png            |
++-------------------------------------------------------+
+| .. image:: images/CircleAngleCounterClockWise.png     |
++-------------------------------------------------------+
+
+Sytles
+------
+Like QGIS, CADDigitize let you apply edit styles.
+
+.. image:: images/en/SettingsStyles.png
